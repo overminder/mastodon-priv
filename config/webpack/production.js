@@ -15,6 +15,7 @@ const sharedConfig = require('./shared');
 const root = resolve(__dirname, '..', '..');
 
 module.exports = merge(sharedConfig, {
+  parallelism: 1,
   mode: 'production',
   devtool: 'source-map',
   stats: 'normal',
